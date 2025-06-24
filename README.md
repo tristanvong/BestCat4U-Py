@@ -6,7 +6,7 @@ Rewritten version of my '[BestCat4U](https://github.com/tristanvong/BestCat4U)' 
 docker compose up
 ```
 
-## How project is designed:
+## How the project is designed:
 This project consists of a quiz which uses a weighted approach. Each cat entry in the file `cat_data.py`
 or rather dictionary in this list has an integer value (except `hair_length`) this integer is used to
 give weight to each trait of the cat.
