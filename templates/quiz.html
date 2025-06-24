@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cat Quiz</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="p-6 max-w-xl mx-auto bg-white shadow-lg rounded">
+{% extends "layout.html" %}
+
+{% block title %}Cat Quiz{% endblock %}
+
+{% block content %}
+<div class="bg-white shadow-lg rounded p-6">
     <h1 class="text-xl font-bold mb-4">Find your ideal cat!</h1>
     <form action="/quiz" method="POST" class="space-y-4">
-
         <label>Do you have young kids?</label>
         <select name="kids" class="w-full p-2 border rounded">
             <option value="yes">Yes</option>
@@ -35,5 +33,5 @@
 
         <button type="submit" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">See potential cats</button>
     </form>
-</body>
-</html>
+</div>
+{% endblock %}
