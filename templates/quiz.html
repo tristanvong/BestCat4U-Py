@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 max-w-xl mx-auto bg-white shadow-lg rounded">
+    <h1 class="text-xl font-bold mb-4">Find your ideal cat!</h1>
+    <form action="/quiz" method="POST" class="space-y-4">
+
+        <label>Do you have young kids?</label>
+        <select name="kids" class="w-full p-2 border rounded">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Do you have other animals?</label>
+        <select name="animals" class="w-full p-2 border rounded">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Do you want a cuddly cat or independent?</label>
+        <select name="cuddle" class="w-full p-2 border rounded">
+            <option value="cuddly">Cuddly</option>
+            <option value="independent">Independent</option>
+        </select>
+
+        <label>Preferred hair length:</label>
+        <select name="hair_length" class="w-full p-2 border rounded">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <button type="submit" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">See potential cats</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOP cat matches</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-bold mb-6">Your cat breed recommendations:</h1>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+        {% for cat in recommendations %}
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-semibold">
+                {{ loop.index }}. {{ cat.name }}
+            </h2>
+            <img src="{{ url_for('static', filename='images/' + cat.image) }}" alt="{{ cat.name }}" class="mt-2 rounded">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
