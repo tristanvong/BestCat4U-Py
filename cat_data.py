@@ -1,5 +1,16 @@
 cats = [
     {
+        "name": "British Shorthair",
+        "image": "british_shorthair.jpg",
+        "traits": {
+            "good_with_kids": 0.8,
+            "good_with_other_animals": 0.7,
+            "affectionate": 0.6,
+            "independent": 0.5,
+            "hair_length": "short"
+        }
+    },
+    {
         "name": "Ragdoll",
         "image": "ragdoll.jpg",
         "traits": {
@@ -21,15 +32,4 @@ cats = [
             "hair_length": "short"
         }
     },
-    {
-        "name": "British Shorthair",
-        "image": "british_shorthair.jpg",
-        "traits": {
-            "good_with_kids": 0.8,
-            "good_with_other_animals": 0.7,
-            "affectionate": 0.6,
-            "independent": 0.5,
-            "hair_length": "short"
-        }
-    }
 ]
