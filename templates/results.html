@@ -10,7 +10,7 @@
         <h2 class="text-xl font-semibold">
             {{ loop.index }}. {{ cat.name }}
         </h2>
-        <img src="{{ url_for('static', filename='images/' + cat.image) }}" alt="{{ cat.name }}" class="mt-2 rounded">
+        <img src="{{ url_for('static', filename='images/' + cat.image) }}" alt="{{ cat.name }}" class="mt-2 rounded max-h-64 mx-auto">
     </div>
     {% endfor %}
 </div>
