@@ -22,6 +22,17 @@ cats = [
         }
     },
     {
+        "name": "Maine Coon",
+        "image": "maine_coon.jpg",
+        "traits": {
+            "good_with_kids": 0.9,
+            "good_with_other_animals": 0.8,
+            "affectionate": 0.8,
+            "independent": 0.4,
+            "hair_length": "long"
+        }
+    },
+    {
         "name": "Ragdoll",
         "image": "ragdoll.jpg",
         "traits": {
