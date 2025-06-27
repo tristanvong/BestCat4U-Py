@@ -29,6 +29,7 @@ def quiz():
 
         scored = [(cat, score_cat(cat, preferences)) for cat in cats]
         scored.sort(key=lambda x: x[1], reverse=True)
+        # shows only top 3 cats
         recommendations = [c[0] for c in scored[:3]]
 
         return render_template('results.html', recommendations=recommendations)
